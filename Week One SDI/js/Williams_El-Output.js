@@ -15,7 +15,7 @@ console.log ("A popular number of photos for a group is " + groupPhotos);//[prin
 
 var pointAndShoot= false;// boolean variable defined
 console.log (pointAndShoot);// print a false boolean variable
-console.log ("True or False, Can you take the same type of pictures with a point and shot camera as one with different lenses? " +  pointAndShoot);//boolean with concatenated statement for context//
+console.log ("True or False, Can you take the same type of pictures with a point and shoot camera as one with different lenses? " +  pointAndShoot);//boolean with concatenated statement for context//
 
 var interchangableLense = true;//boolean variable defined
 console.log (interchangableLense);//print a true boolean variable
@@ -24,7 +24,7 @@ console.log ("True or false, Are expensive cameras with different lense options 
 var bestCamera =prompt ("Which type of Camera, do you perfer?  ");//define bestCamera as a user prompted answer
 console.log ("Which type of Camera, do you perfer?");//print prompt statement
 console.log (bestCamera);//print user response
-console.log ("I prefer a Canon Rebel with 3 lenses when i take photos, but " + bestCamera + " is a good choice as well."); //concatenated final statement for context//
+console.log ("I prefer a Canon Rebel with 3 lenses when I take photos, but " + bestCamera + " is a good choice as well."); //concatenated final statement for context//
 
 ///End of code///
 
