@@ -43,17 +43,19 @@ console.log (userB2); //print to console
 
 var userH = prompt ("Please Enter Height"); // prompt 3 for the user to get an area
 console.log ("Please Enter Height");//print to console
-console.log (userh);//print to console
+console.log (userH);//print to console
 
-alert ("The is area of the Trapazoid is");//alerting user the next field has the answer
-console.log ("The is area of the Trapazoid is");//printing to console
+var userTotal = Number(userB1)+ Number(userB2);//step 1 in formula for prompts
+console.log (userTotal);//print to console
 
-var usertotal = Number(userB1)+ Number(userb2);//step 1 in formula for prompts
-console.log (usertotal);//print to console
+var userArea = (userTotal)/2 * userH; //solution prompt for user
+console.log (userArea);//print to console
 
-var userarea = (usertotal)/2 * userh; //solution prompt for user
-prompt (userarea);//show user the area of the trapezoid
-console.log (userarea);//print to console
+alert ("The area of your trapezoid is " + userArea);//show user the area of the trapezoid
+console.log ("The area of the trapezoid is " + userArea);
+
+//End of the calculator for a trapezoid//
+
 
 //Assignment Operators requirement added in this section
 var noofonions = 3;//definition
