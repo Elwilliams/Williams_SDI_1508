@@ -7,7 +7,7 @@
 // Area of a Trapezoid is (b1+b2)/2 times h
 
 //Sample hard value trapezoid formula//
-    //Thia formula is a test//
+    //Thia formula includes assignment operator example//
 console.log ("This is a hard value test formula for the area of a Trapezoid");
 var b1 = 10; //define variable b1
 var b2 = 12; //define variable b2
@@ -16,6 +16,13 @@ console.log (b2);//print to console var b2 value
 
 var baseArray = [b1, b2];//define array
 console.log (baseArray);//print to console the array
+
+//begin assignment operator example//
+var trapSides =3; //define variable and value//
+trapSides += 0; //addition assignment operator//
+console.log (trapSides); //print to console addition assignment operator//
+trapSides -= 1; //subtraction assignment operator//
+console.log (trapSides); //print to concole subtraction assignmnet operator//
 
 var total= b1 + b2; //addition step 1 in formula
 console.log (total); //print to console
@@ -57,15 +64,4 @@ console.log ("The area of the trapezoid is " + userArea);
 //End of the calculator for a trapezoid//
 
 
-//Assignment Operators requirement added in this section
-var noofonions = 3;//definition
-console.log (noofonions); //print to console
-noofonions += 4;//addition assignment operator
-console.log (noofonions);//print to console
-
-var noofpears = 5;// definition
-noofpears -= 5;//subtraction assignment operator
-console.log (noofpears); //print to console
-
-//Assignmnet Operators end //
 
