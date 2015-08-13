@@ -64,4 +64,3 @@ console.log ("The area of the trapezoid is " + userArea);// print out area of th
 //End of the calculator for a trapezoid//
 
 
-
