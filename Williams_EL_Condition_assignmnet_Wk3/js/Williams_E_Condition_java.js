@@ -28,20 +28,16 @@ console.log ("The amount of cash to pay off debit is " + cashOnHand);//User's an
 }
 // if and else if requirement
 //define variable noOfCards with a user prompt. Print to the console both the statement and the user response with a context string.
-var noOfCards = prompt ("Please enter the number of credit cards you currently have");
+var noOfCards = prompt ("Please enter the number of credit cards you currently have.");
 console.log ("Please enter the number of credit cards you currently have");//print the prompt statement to the console.
 console.log ("The number of cards is " +noOfCards);//print to console user respose with context string
 
              //establish a prompt if the user does not answer the question.
-         if (noOfCards === "") //conditional if the user enters no information
+         if (noOfCards === ""){ //conditional if the user enters no information
              noOfCards = prompt ("You must enter a value in this field, please try again. \nPlease enter the amount of credit cards you have");
-        console.log ("You must enter a value in this field, please try again. \nPlease enter the amount of credit cards you have");
-         }else{
-             noOfCards === "0"// conditional if the user enters 0
-             console.log ("If you have no credit cards, you have no debit!");
-         }else{
-             noOfCards < "1" // conditional for anything more than one card
-            console. log ("You have" + noOfCards + " cards.")
+        console.log ("You must enter a value in this field, please try again. \nPlease enter the amount of credit cards you have")
+        }else{
+             console.log ("Great let's move on to the next question.")
 }
 // if and else conditional example
 //define variable amtofDebt and print the statement and the user response with context string to the console.
@@ -52,17 +48,16 @@ console.log ("The total debit is "+ amtOfDebt); //print to console the user's to
 var timesUserClicked = 1;// establish a variable for the user just clicking away from the prompt
 
         //loop to continue to prompt the user for a value for the amount of debt the user has
-        while (amtOfDebt === ""){ //establish the loop
-            amtofDebt = prompt("You must answer this question, \n How much debt do you owe?");//prompt the user the enter a value again
-            console.log ("You must answer this question, \n How much debt do you owe?");//print to the console.
-
-            timesUserClicked ++;// continue the loop until the user enters a value.
-
-    }
-//loop with no end example
+        if (amtOfDebt === "") { //establish
+            amtofDebt = prompt("You must answer this question, \nHow much debt do you owe?");//prompt the user the enter a value again
+            console.log("You must answer this question, \nHow much debt do you owe?");//print to the console.
+        }else{
+            console.log ("Great let's move on to the next question.")
+        }
+//conditional if/else
 //establish variable for the amount of debt divided by the number of cards.
 var optAverage  = Number(amtOfDebt / noOfCards);//division expression to find the average of debt in relation to the amount of cards.
-console.log ("The answer is " + optAverage);//printed answer with context string
+console.log ("The average debt in relation to the amount of cards is " + optAverage + " per card.");//printed answer with context string
 
 //establish a variable for the total debt less what the user has to pay it off
 var debtToCash = Number (amtOfDebt - cashOnHand);// subtraction expression to find the amount of debt left after using all of the users cash for paydown
