@@ -33,17 +33,20 @@ console.log ("Please enter the number of credit cards you currently have");//pri
 console.log ("The number of cards is " +noOfCards);//print to console user respose with context string
 
              //establish a prompt if the user does not answer the question.
-         if (noOfCards === ""){
-        noOfCards = prompt ("You must enter a value in this field, please try again. \nPlease enter the amount of credit cards you have");
+         if (noOfCards === "") //conditional if the user enters no information
+             noOfCards = prompt ("You must enter a value in this field, please try again. \nPlease enter the amount of credit cards you have");
         console.log ("You must enter a value in this field, please try again. \nPlease enter the amount of credit cards you have");
-        }else{
-             noOfCards === "0"
+         }else{
+             noOfCards === "0"// conditional if the user enters 0
              console.log ("If you have no credit cards, you have no debit!");
-         }
-
+         }else{
+             noOfCards < "1" // conditional for anything more than one card
+            console. log ("You have" + noOfCards + " cards.")
+}
+// if and else conditional example
 //define variable amtofDebt and print the statement and the user response with context string to the console.
-var amtOfDebt = prompt ("What is the total amount of debit you have?");
-console.log ("What is the total amount of debit you have?");
+var amtOfDebt = prompt ("What is the total amount of debit you have?");//user prompt for the user's amount of debt
+console.log ("What is the total amount of debit you have?");//print the prompt statement to the log
 console.log ("The total debit is "+ amtOfDebt); //print to console the user's total debit
 
 var timesUserClicked = 1;// establish a variable for the user just clicking away from the prompt
@@ -56,6 +59,7 @@ var timesUserClicked = 1;// establish a variable for the user just clicking away
             timesUserClicked ++;// continue the loop until the user enters a value.
 
     }
+//loop with no end example
 //establish variable for the amount of debt divided by the number of cards.
 var optAverage  = Number(amtOfDebt / noOfCards);//division expression to find the average of debt in relation to the amount of cards.
 console.log ("The answer is " + optAverage);//printed answer with context string
@@ -67,7 +71,7 @@ alert ("You will have " + debtToCash + " left in debt once you use all available
 
 var debtResult;//establish the variable debtResult for a logical operator to alert the user on how to pay off their debt and whether it is all paid.
 
-debtResult  = (debtToCash <= 0) ? "Pay off all your cards, Congratulations you are out of debt" : "Pay off the smallest balance first, then the next smallest, \nand so on up to the amount of cash you have on hand to pay down debt.";
+debtResult  = (debtToCash <= 0) ? "Pay off all your cards, Congratulations you are out of debt" : "Pay off the smallest balance first, then the next smallest, and so on \nUp to the amount of cash you have on hand to pay down debt.";//ternary operator
 console. log (debtResult);// print the statement that matches the 2 conditions.
 alert (debtResult);//alert the user as to how to pay off their debt based on a ternary conditional operator
 
@@ -75,7 +79,7 @@ alert (debtResult);//alert the user as to how to pay off their debt based on a t
 if (amtOfDebt ==="0" && noOfCards === "0"){ //logical operator for 0's being entered in 2 of the prompts concerning their debt
     console.log ("You have no debit to pay off!");//print to the console this statement is both statements are true
 }else{
-    console.log ("You should pay off all your debt up to amount cash you have to pay debt, starting with the lowest balance and work your way up");//print this if 1 or both user prompts = 0
+    console.log ("You should pay off all your debt up to amount cash you have to pay debt, starting with the lowest balance and work your way up.");//print this if 1 or both user prompts = 0
 }
 //Logical operator requirement
 //end of code
