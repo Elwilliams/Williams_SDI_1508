@@ -22,9 +22,9 @@ console.log ("The amount of cash to pay off debit is " + cashOnHand);//User's an
         console.log("You must enter a value in this field, please try again.\nPlease enter the amount of cash you have to pay off debt?")
 
         //establish an alert that states if the user enters 0 there is no funds to pay off debit.
-    }else if(cashOnHand === "0"){ //else statement to alert the user that if they have 0 funds, nothing can be paid off.
-    cashOnHand = alert("If you have no cash to pay down debit, you cannot pay off any credit cards.");
-    console.log ("If you have no cash to pay down debit, you cannot pay off any credit cards.");//print alert statement to the console.
+    }else if
+    (cashOnHand){
+        console.log("Great let's move on")
 }
 // if and else if requirement
 //define variable noOfCards with a user prompt. Print to the console both the statement and the user response with a context string.
@@ -52,7 +52,7 @@ var timesUserClicked = 1;// establish a variable for the user just clicking away
             amtofDebt = prompt("You must answer this question, \nHow much debt do you owe?");//prompt the user the enter a value again
             console.log("You must answer this question, \nHow much debt do you owe?");//print to the console.
         }else{
-            console.log ("Great let's move on to the next question.")
+            console.log ("Great let's move on to the next question.")//print to console message for else to move on
         }
 //conditional if/else
 //establish variable for the amount of debt divided by the number of cards.
