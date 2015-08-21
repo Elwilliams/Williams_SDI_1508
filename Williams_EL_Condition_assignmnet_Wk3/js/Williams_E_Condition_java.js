@@ -27,7 +27,7 @@ console.log ("The amount of cash to pay off debit is " + cashOnHand);//User's an
 }
 // if and else if requirement
 //define variable noOfCards with a user prompt. Print to the console both the statement and the user response with a context string.
-var noOfCards = prompt ("Please enter the number of credit cards you currently have.");
+var noOfCards = (Number(prompt ("Please enter the number of credit cards you currently have.")));
 console.log ("Please enter the number of credit cards you currently have");//print the prompt statement to the console.
 console.log ("The number of cards is " +noOfCards);//print to console user response with context string
 
@@ -48,7 +48,7 @@ var timesUserClicked = 1;// establish a variable for the user just clicking away
 
         //loop to continue to prompt the user for a value for the amount of debt the user has
         if (amtOfDebt === "") { //establish
-            amtofDebt = prompt("You must answer this question, \nHow much debt do you owe?");//prompt the user the enter a value again
+            amtofDebt = (Number(prompt("You must answer this question, \nHow much debt do you owe?")));//prompt the user the enter a value again
             console.log("You must answer this question, \nHow much debt do you owe?");//print to the console.
         }else{
             console.log ("Great let's move on to the next question."); //print to console message for else to move on
