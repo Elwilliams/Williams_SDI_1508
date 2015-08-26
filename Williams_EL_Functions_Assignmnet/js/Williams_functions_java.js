@@ -37,62 +37,43 @@ function valType (mustEnter) { //defining the function
 }
 
 //End Function for a loop if the user clicks past prompt.
-//Starting Main Code
 
-valType (lotteryType);//call function
-console.log ("You entered " + lotteryType + "if it was Powerball or Florida lottery your numbers will appear, if not reload the page");
-//prints users response and if it matches one of the two possible values we will get random numbers.
-
-var ranNumber;// variable for printing numbers to console.
-
-// Pause main code
 // Start function for a math object to create a random number//
-function randomLotteryNum (max, min) {
+function randomLotteryNum (max,min,num) {
 
-    var ranLotArray = []; //unused array variable as it kept throwing undefined out
-    //remained in code for future correction//however, it works without it...
+    var randomLotNum = [];
+    //Formula used (Max-Min) + 4
 
-    //Formula used (Max-Min) + 5
-
-    var randomLotteryNum = Math.random() * (max - min) + 5;// To get a random number between 1 and 53
-    randomLotteryNum =Math.round(randomLotteryNum); // To set the array to the random number and to the nearest whole number.
-
-    return randomLotteryNum;// out process from the function that gives us the random numbers///
+    for (var x = 0; x < num; x++) {
+        randomLotNum[x] = Math.random() * (max - min) + 4;// To get a random number between 1 and 53
+        randomLotNum[x]= Math.round(randomLotNum[x]); // To set the array to the random number and to the nearest whole number.
+    }
+    return randomLotNum;// out process from the function that gives us the random numbers///
 }
 // End function to create a random number
-// Start conditionals in Main Code
+// Start Main Code
+
+valType (lotteryType);//call function
+console.log ("You entered " + lotteryType + " if it was Powerball or Florida Lottery your numbers will appear, if not reload the page");
+//prints users response and if it matches one of the two possible values we will get random numbers.
+
+var ranNumber; // variable for printing numbers to console.
 
 if// conditional to choose The Florida Lottery
 (lotteryType === "Florida Lottery") {/// if the user entered Florida Lottery correctly, they get the numbers..
-    console.log("Great! The Florida Lottery Numbers are coming right up"); //establishing the florida lottery formula
-    ranNumber = randomLotteryNum (53, 1, 6);
-    console.log ("The first number is" +  ranNum);//print out number 1
-    ranNumber = randomLotteryNum (53, 1, 6);
-    console.log ("The second number is " + ranNumber);//print out number 2
-    ranNumber = randomLotteryNum (53, 1, 6);
-    console.log ("The third number is " + ranNumber); //print out number 3
-    ranNumber = randomLotteryNum (53, 1, 6);
-    console.log ("The fourth number is " + ranNumber); //print out number 4
-    ranNumber = randomLotteryNum (53, 1, 6);
-    console.log ("The fifth number is " + ranNumber); //print out number 5
-    ranNumber = randomLotteryNum (53, 1, 6);
-    console.log ("The sixth and final number is " + ranNumber);// print out number 6
+    ranNumber = randomLotteryNum (53,1,6);
+    console.log ("The Florida Lottery Numbers are " + ranNumber);
 
-}else if//conditional to choose Powerball
+}else if //conditional to choose Powerball
 (lotteryType === "Powerball") { ///if the user entered Powerball correctly, they get the numbers.
-    console.log("Great! The Powerball Numbers are coming up....");// establishing the Powerball formula
-    ranNumber = randomLotteryNum (59,1,5); // Calling function for random number
-    console.log ("The Powerball Numbers are ");// Number 1 w/ intro message
-    console.log (ranNumber);
-    ranNumber = randomLotteryNum (59,1,5); //Number 2
-    console.log (ranNumber);
-    ranNumber = randomLotteryNum (59,1,5); //Number 3
-    console.log (ranNumber);
-    ranNumber = randomLotteryNum (59,1,5);//Number 4
-    console.log (ranNumber);
-    ranNumber = randomLotteryNum (59,1,5); //Number 5
-    console.log (ranNumber);
-    ranNumber = randomLotteryNum (59,1,5); //Powerball/ number 6
-    console.log ("And the Powerball is " + ranNumber)
+    ranNumber =randomLotteryNum (59,1,5);
+    console.log ("The Powerball numbers are " + ranNumber);
+    ranNumber =randomLotteryNum (35,1,1);
+    console.log ("And the Powerball is" + ranNumber);
 }
-//End Conditional...
+//End of conditional to generate correct numbers
+
+console.log ("Did you win?");// closing comments
+
+//end of code
+
