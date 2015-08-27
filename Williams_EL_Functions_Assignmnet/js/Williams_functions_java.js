@@ -15,8 +15,7 @@ var lotteryType = prompt("Which lottery results do you want? \nPlease enter eith
 console.log ("Which lottery results do you want? \nPlease enter either Powerball or Florida Lottery");//print user prompt to the console.
 console.log("The user entered " + lotteryType);//print to the console the user's response with context string.
 
-//Stop main code//
-
+//Pause main code//
 //Start function for a loop if user clicks last prompt//
 function valType (mustEnter) { //defining the function
 
@@ -33,22 +32,23 @@ function valType (mustEnter) { //defining the function
             break;//mark the break of the loop
         }
     }
-    return mustEnter;
+    return mustEnter; //returned value from function.
 }
 
-//End Function for a loop if the user clicks past prompt.
-
+// End Function for a loop if the user clicks past prompt.
 // Start function for a math object to create a random number//
+
 function randomLotteryNum (max,min,num) {
 
     var randomLotNum = [];
-    //Formula used (Max-Min) + 4
+    //Formula used to generate a random lottery number (Max-Min) + min -1
 
-    for (var x = 0; x < num; x++) {
-        randomLotNum[x] = Math.random() * (max - min) + 4;// To get a random number between 1 and 53
-        randomLotNum[x]= Math.round(randomLotNum[x]); // To set the array to the random number and to the nearest whole number.
+    for (var x = 0; x < num; x++) { //loop for creating multiple random numbers
+        randomLotNum[x] = Math.random() * (max - min) + min - 1;// formula to generate my random lottery number.
+        randomLotNum[x] = Math.round(randomLotNum[x]); //additional math section to round to the nearest whole number.
+
     }
-    return randomLotNum;// out process from the function that gives us the random numbers///
+    return randomLotNum;// value from the function.
 }
 // End function to create a random number
 // Start Main Code
@@ -71,9 +71,7 @@ if// conditional to choose The Florida Lottery
     ranNumber =randomLotteryNum (35,1,1);
     console.log ("And the Powerball is" + ranNumber);
 }
-//End of conditional to generate correct numbers
-
 console.log ("Did you win?");// closing comments
 
-//end of code
+//end of code//
 
