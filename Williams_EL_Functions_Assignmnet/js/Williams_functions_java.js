@@ -71,6 +71,7 @@ if// conditional if Florida Lottery results were asked for by user
     ranNumber =randomLotteryNum (59,1,5); //call returned value from function randomLotteryNum, randomLotNum with terms of Max 59, Min 1, 5 times.
     alert ("The Powerball numbers are " + ranNumber + " The next window will reveal the Powerball");
     console.log ("The Powerball numbers are " + ranNumber); //print to the console the results with a context string.
+
     ranNumber =randomLotteryNum (35,1,1);//call returned value from function randomLotteryNum, randomLotNum with terms of Max 35, Min 1, 1 time.
     alert ("The Powerball is "+ ranNumber + " \nDid you win?");//alert the user of the Powerball number
     console.log ("And the Powerball is " + ranNumber);//print to the console the Powerball number with context string.
